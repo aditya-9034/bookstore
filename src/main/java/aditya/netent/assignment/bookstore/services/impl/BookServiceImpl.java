@@ -42,4 +42,9 @@ public class BookServiceImpl implements BookService {
     @Override public Book removeOne(UUID id) {
         return null;
     }
+
+    @Override
+    public boolean update(Book book, UUID id) {
+        return bookRepository.update(book, id);
+    }
 }

@@ -53,6 +53,9 @@ public class BookRepositoryImpl implements BookRepository {
 
     @Override
     public boolean update(Book book, UUID bookId) {
+        if(book.getQuantity() == 0){
+            book.setQuantity(1);
+        }
         try {
             JestResult jestResult = jestClient.execute(
                 new Index.Builder(book)

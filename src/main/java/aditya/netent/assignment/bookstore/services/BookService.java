@@ -10,6 +10,8 @@ public interface BookService {
 
     Book get(UUID id);
 
+    boolean update(Book book, UUID id);
+
     Book getByIsbn(Long isbn);
 
     List<Book> search(String query, String value);
