@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class MediaCoverageServiceImpl implements MediaCoverageService {
     @Autowired
-    MediaCoverageRepository mediaCoverageRepository;
+    private MediaCoverageRepository mediaCoverageRepository;
 
     @Override
     public List<MediaCoverage> getMediaCoverageForBook(String title){

@@ -63,7 +63,7 @@ class BookStoreApplicationTests {
 	}
 
 	@Test
-	void searchBookB(){
+	void searchBook(){
 		String key = "title";
 		String value = "quantum";
 		assertThat(bookService.search(key, value)).isNotEmpty();

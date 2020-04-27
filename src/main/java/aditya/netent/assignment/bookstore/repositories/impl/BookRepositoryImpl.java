@@ -20,7 +20,7 @@ import java.util.UUID;
 public class BookRepositoryImpl implements BookRepository {
 
     @Autowired
-    JestClient jestClient;
+    private JestClient jestClient;
 
     @Override
     public boolean add(Book book) {
@@ -111,7 +111,7 @@ public class BookRepositoryImpl implements BookRepository {
                                 "\"bool\": {" +
                                     "\"must\": [" +
                                         "{ \"match\": { " +
-                                            "\"isbn\": 9783544450258 " +
+                                            "\"isbn\": "+ value +" " +
                                                       "}" +
                                         "}" +
                                 "]" +

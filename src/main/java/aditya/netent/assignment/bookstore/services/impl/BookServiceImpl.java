@@ -12,7 +12,7 @@ import java.util.UUID;
 @Service
 public class BookServiceImpl implements BookService {
     @Autowired
-    BookRepository bookRepository;
+    private BookRepository bookRepository;
 
     @Override
     public boolean add(Book book) {

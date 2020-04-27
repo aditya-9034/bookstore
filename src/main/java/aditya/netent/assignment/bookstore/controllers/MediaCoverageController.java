@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping("/media-coverage")
 public class MediaCoverageController {
     @Autowired
-    MediaCoverageService mediaCoverageService;
+    private MediaCoverageService mediaCoverageService;
 
     @GetMapping("")
     public List<MediaCoverage> getMediaCoverage(@RequestParam("title") String title){

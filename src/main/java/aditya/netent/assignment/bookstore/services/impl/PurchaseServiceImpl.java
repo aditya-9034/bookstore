@@ -12,10 +12,10 @@ import org.springframework.stereotype.Service;
 public class PurchaseServiceImpl implements PurchaseService {
 
     @Autowired
-    PurchaseRepository purchaseRepository;
+    private PurchaseRepository purchaseRepository;
 
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
     @Override
     public Purchase addPurchase(Purchase purchase) {

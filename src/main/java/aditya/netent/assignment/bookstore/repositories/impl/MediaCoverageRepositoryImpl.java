@@ -14,7 +14,7 @@ import java.util.List;
 public class MediaCoverageRepositoryImpl implements MediaCoverageRepository {
 
     @Autowired
-    RestTemplate restTemplate;
+    private RestTemplate restTemplate;
 
     public List<MediaCoverage> getMediaCoverage(){
         ResponseEntity<MediaCoverage[]> response =

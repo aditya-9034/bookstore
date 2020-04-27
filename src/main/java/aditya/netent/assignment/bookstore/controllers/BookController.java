@@ -13,7 +13,7 @@ import java.util.UUID;
 public class BookController {
 
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
     @PostMapping({"", "/"})
     public boolean addBook(@RequestBody Book book){

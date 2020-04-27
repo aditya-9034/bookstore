@@ -13,7 +13,8 @@ import org.springframework.web.server.ResponseStatusException;
 @RestController
 @RequestMapping("/purchases")
 public class PurchaseController {
-    @Autowired PurchaseService purchaseService;
+    @Autowired
+    private PurchaseService purchaseService;
 
     @PostMapping("")
     public Purchase addPurchase(@RequestBody Purchase purchase) throws ResponseStatusException{
