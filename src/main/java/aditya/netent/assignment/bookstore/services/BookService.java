@@ -12,9 +12,5 @@ public interface BookService {
 
     boolean update(Book book, UUID id);
 
-    Book getByIsbn(Long isbn);
-
     List<Book> search(String query, String value);
-
-    Book removeOne(UUID id);
 }

@@ -31,16 +31,8 @@ public class BookServiceImpl implements BookService {
         return bookRepository.get(id);
     }
 
-    @Override public Book getByIsbn(Long isbn) {
-        return null;
-    }
-
     @Override public List<Book> search(String query, String value) {
         return bookRepository.search(query, value);
-    }
-
-    @Override public Book removeOne(UUID id) {
-        return null;
     }
 
     @Override
